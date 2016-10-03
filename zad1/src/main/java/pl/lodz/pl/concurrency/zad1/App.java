@@ -5,17 +5,16 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-public class App 
-{
+public class App {
 	private final static Logger logger = Logger.getLogger(App.class);
 	
 	private final static int lowerBorder = 0;
-	private final static int higherBorder = 20;
-	private final static int lowerSetCapacity = 5;
+	private final static int higherBorder = 99;
+	private final static int lowerSetCapacity = 40;
 	
     public static void main( String[] args ) throws InterruptedException {
     	
-    	logger.info("Starting program !" + "Left border: " + lowerBorder + " Right border: " + higherBorder + 
+    	logger.info("Starting program ! " + "Left border: " + lowerBorder + " Right border: " + higherBorder + 
     			"Lower numbers set capacity : " + lowerSetCapacity);
     	
     	SetGenerator setGenerator= new SetGenerator(lowerBorder, higherBorder);
