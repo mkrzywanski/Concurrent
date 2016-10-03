@@ -1,0 +1,71 @@
+2016-10-03 16:36:01,613 pl.lodz.pl.concurrency.zad1.App INFO  - Starting program !Left border: 0 Right border: 20Lower numbers set capacity : 5
+2016-10-03 16:36:01,622 pl.lodz.pl.concurrency.zad1.App INFO  - All numbers :[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+2016-10-03 16:36:01,623 pl.lodz.pl.concurrency.zad1.App INFO  - Lower numbers :[14, 13, 16, 9, 1] Amount : 5
+2016-10-03 16:36:01,624 pl.lodz.pl.concurrency.zad1.App INFO  - High numbers :[18, 8, 11, 0, 17, 2, 19, 12, 6, 10, 4, 15, 3, 5, 7, 20] Amount : 16
+2016-10-03 16:36:01,633 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - SEMAPHORE ACQUIRED
+2016-10-03 16:36:01,633 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,634 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,641 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,641 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,641 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,634 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - ADDING HIGHEST NUMBER TO HIGHERSET
+2016-10-03 16:36:01,642 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,643 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - SEMAPHORE RELEASED
+2016-10-03 16:36:01,643 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,643 pl.lodz.pl.concurrency.zad1.HighSet INFO  - SEMAPHORE ACQUIRED
+2016-10-03 16:36:01,644 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,644 pl.lodz.pl.concurrency.zad1.HighSet INFO  - ADDING LOWEST NUMBER TO LOWERSET
+2016-10-03 16:36:01,647 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,648 pl.lodz.pl.concurrency.zad1.HighSet INFO  - SEMAPHORE RELEASED
+2016-10-03 16:36:01,649 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,649 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,649 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,648 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - SEMAPHORE ACQUIRED
+2016-10-03 16:36:01,650 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - ADDING HIGHEST NUMBER TO HIGHERSET
+2016-10-03 16:36:01,649 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,651 pl.lodz.pl.concurrency.zad1.HighSet INFO  - SEMAPHORE ACQUIRED
+2016-10-03 16:36:01,650 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - SEMAPHORE RELEASED
+2016-10-03 16:36:01,651 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,652 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,652 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,652 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,653 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,653 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,651 pl.lodz.pl.concurrency.zad1.HighSet INFO  - ADDING LOWEST NUMBER TO LOWERSET
+2016-10-03 16:36:01,654 pl.lodz.pl.concurrency.zad1.HighSet INFO  - SEMAPHORE RELEASED
+2016-10-03 16:36:01,655 pl.lodz.pl.concurrency.zad1.HighSet INFO  - SEMAPHORE ACQUIRED
+2016-10-03 16:36:01,654 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,656 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,656 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,657 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,657 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,658 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,658 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,659 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,655 pl.lodz.pl.concurrency.zad1.HighSet INFO  - ADDING LOWEST NUMBER TO LOWERSET
+2016-10-03 16:36:01,659 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,661 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - SEMAPHORE ACQUIRED
+2016-10-03 16:36:01,661 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - ADDING HIGHEST NUMBER TO HIGHERSET
+2016-10-03 16:36:01,662 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - SEMAPHORE RELEASED
+2016-10-03 16:36:01,662 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - SEMAPHORE ACQUIRED
+2016-10-03 16:36:01,660 pl.lodz.pl.concurrency.zad1.HighSet INFO  - SEMAPHORE RELEASED
+2016-10-03 16:36:01,662 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - ADDING HIGHEST NUMBER TO HIGHERSET
+2016-10-03 16:36:01,663 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,664 pl.lodz.pl.concurrency.zad1.HighSet INFO  - SEMAPHORE ACQUIRED
+2016-10-03 16:36:01,663 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - SEMAPHORE RELEASED
+2016-10-03 16:36:01,664 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,665 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,665 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,666 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,666 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,666 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,667 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,664 pl.lodz.pl.concurrency.zad1.HighSet INFO  - ADDING LOWEST NUMBER TO LOWERSET
+2016-10-03 16:36:01,675 pl.lodz.pl.concurrency.zad1.Semaphore INFO  - SEMAPHORE WAITING
+2016-10-03 16:36:01,676 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - SEMAPHORE ACQUIRED
+2016-10-03 16:36:01,675 pl.lodz.pl.concurrency.zad1.HighSet INFO  - SEMAPHORE RELEASED
+2016-10-03 16:36:01,677 pl.lodz.pl.concurrency.zad1.HighSet INFO  - SEMAPHORE ACQUIRED
+2016-10-03 16:36:01,677 pl.lodz.pl.concurrency.zad1.LowerSet INFO  - SEMAPHORE RELEASED
+2016-10-03 16:36:01,678 pl.lodz.pl.concurrency.zad1.HighSet INFO  - SEMAPHORE RELEASED
+2016-10-03 16:36:01,679 pl.lodz.pl.concurrency.zad1.App INFO  - [0, 1, 2, 3, 4]
+2016-10-03 16:36:01,679 pl.lodz.pl.concurrency.zad1.App INFO  - [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
