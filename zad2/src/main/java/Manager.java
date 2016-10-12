@@ -17,7 +17,7 @@ public class Manager extends Thread {
         while(storage.locationSentMessages(id) < messagesNumber){
             try {
                 storage.sendMessage(id, "something " + id);
-                int delay = (int)(Math.random() * 1000 + 1000);
+                int delay = (int)(Math.random() * 1000 + 3000);
                 sleep(delay);
             }catch (InterruptedException ex){}
         }

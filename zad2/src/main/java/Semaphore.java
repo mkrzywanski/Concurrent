@@ -5,18 +5,22 @@ import org.apache.log4j.Logger;
  */
 public class Semaphore {
 
-    private static final Logger logger = Logger.getLogger(Semaphore.class);
     private boolean signal = false;
 
-    public void acquire() {
-        while(this.signal){
-            logger.info("SEMAPHORE WAITING");
+    public synchronized void acquire() {
+        while(this.signal) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
         this.signal = true;
     }
 
-    public void release() {
+    public synchronized void release(){
         this.signal = false;
+        notifyAll();
     }
 
 }

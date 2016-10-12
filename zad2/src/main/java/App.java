@@ -17,5 +17,7 @@ public class App {
         }
 
         new Secretary(storage, MESSAGES_PER_MANAGER * NUMBER_OF_MANAGERS).start();
+
+
     }
 }

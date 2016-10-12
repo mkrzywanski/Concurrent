@@ -12,17 +12,17 @@ public class Location {
     private int id;
     private String message;
     private int sentMessages;
+    private int receivedMessages;
 
-    public Location (int id){
+    public Location(int id) {
         this.id = id;
         isEmpty = true;
         semaphore = new Semaphore();
-        sentMessages = 0;
     }
 
-    public void putMessage(String message){
+    public void putMessage(String message) {
         semaphore.acquire();
-        if(this.isEmpty){
+        if (this.isEmpty) {
             logger.info("Manager number: " + this.id + " sent message MESSAGE: " + message);
             this.message = message;
             this.isEmpty = false;
@@ -31,20 +31,25 @@ public class Location {
         semaphore.release();
     }
 
-    public void receiveMessage(){
+    public void receiveMessage() {
         semaphore.acquire();
-        if(!this.isEmpty) {
-            logger.info("Secretary received message from location: " + this.id + " MESSAGE: " + this.message);
+        if (!this.isEmpty) {
+
             this.message = "";
             this.isEmpty = true;
-        }
-        else{
+            receivedMessages++;
+            logger.info("Secretary received message from location: " + this.id + " MESSAGE: " + this.message);
+        } else {
             logger.info("Secretary skipping location: " + this.id + " (no message)");
         }
         semaphore.release();
     }
 
-    public int getSentMessages(){
+    public int getSentMessages() {
         return this.sentMessages;
+    }
+
+    public int getReceivedMessages() {
+        return this.receivedMessages;
     }
 }

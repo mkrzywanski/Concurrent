@@ -1,58 +1,61 @@
-import java.util.ArrayDeque;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Queue;
 
 /**
  * Created by Michał on 04.10.2016.
  */
 public class Storage {
-    private Queue<Integer> managersQueue;
     private List<Location> locations;
+    private Semaphore semaphore;
+    private Semaphore totalMsgsSemaphore;
+    private Semaphore locationMsgsSemaphore;
 
-    public Storage(int locationsNumber){
-        locations = new ArrayList<Location>();
+    public Storage(int locationsNumber) {
         this.initializeLocations(locationsNumber);
-        this.managersQueue = new ArrayDeque<Integer>();
+        semaphore = new Semaphore();
+        totalMsgsSemaphore = new Semaphore();
+        locationMsgsSemaphore = new Semaphore();
     }
 
-    public void receiveMessage(int id){
+    public void receiveMessage(int id) {
+
         locations.get(id).receiveMessage();
     }
 
-    public void sendMessage(int id, String message){
-        if(!managersQueue.contains(id))
-            managersQueue.add(id);
-
-        if(managersQueue.peek()==id){
-            locations.get(id).putMessage(message);
-            managersQueue.remove();
-        }
-
+    public void sendMessage(int id, String message) {
+        semaphore.acquire();
+        locations.get(id).putMessage(message);
+        semaphore.release();
     }
 
-    public int getLocationsNumber(){
+    public int getLocationsNumber() {
         return this.locations.size();
     }
 
     public int totalMessagesSent() {
         int total = 0;
-        for(Location location : locations){
-            total += location.getSentMessages();
+        totalMsgsSemaphore.acquire();
+        for (Location location : locations) {
+            total += location.getReceivedMessages();
         }
+        totalMsgsSemaphore.release();
         return total;
     }
 
-    public int locationSentMessages(int id){
-        return locations.get(id).getSentMessages();
+    public int locationSentMessages(int id) {
+        int total = 0;
+        locationMsgsSemaphore.acquire();
+        total = locations.get(id).getSentMessages();
+        locationMsgsSemaphore.release();
+        return total;
     }
 
-    private void initializeLocations(int locationsNumber){
+    private void initializeLocations(int locationsNumber) {
         this.locations = new ArrayList<Location>();
-        for(int i = 0 ; i < locationsNumber; i++){
+        for (int i = 0; i < locationsNumber; i++) {
             locations.add(new Location(i));
         }
     }
-
 
 }
