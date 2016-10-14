@@ -1,0 +1,555 @@
+2016-10-14 20:07:59,060 pl.lodz.pl.concurrency.ConcurrentBanker.App INFO  - Starting program
+2016-10-14 20:07:59,062 pl.lodz.pl.concurrency.ConcurrentBanker.App INFO  - Clients: 5 Banker's max capital: 1000 Client's loan operation limit: 5
+2016-10-14 20:07:59,064 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:07:59,065 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:07:59,065 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 17
+2016-10-14 20:07:59,067 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:07:59,067 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 983 florens.
+
+2016-10-14 20:07:59,067 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 983 florens.
+2016-10-14 20:07:59,067 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:07:59,067 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 630
+2016-10-14 20:07:59,068 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:07:59,068 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 353 florens.
+
+2016-10-14 20:07:59,068 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 353 florens.
+2016-10-14 20:07:59,068 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:07:59,068 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 430
+2016-10-14 20:07:59,069 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:07:59,070 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 353 florens.
+
+2016-10-14 20:07:59,070 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 353 florens.
+2016-10-14 20:07:59,071 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:07:59,071 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 619
+2016-10-14 20:07:59,071 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:07:59,071 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 353 florens.
+
+2016-10-14 20:07:59,071 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 353 florens.
+2016-10-14 20:07:59,072 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:07:59,072 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 913
+2016-10-14 20:07:59,072 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:07:59,072 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 353 florens.
+
+2016-10-14 20:07:59,148 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 353 florens.
+2016-10-14 20:07:59,148 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:07:59,149 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 344
+2016-10-14 20:07:59,149 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:07:59,149 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 353 florens.
+
+2016-10-14 20:07:59,267 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 353 florens.
+2016-10-14 20:07:59,267 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:07:59,268 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 1 wants to give back 630
+2016-10-14 20:07:59,268 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 983 florens.
+
+2016-10-14 20:07:59,272 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 983 florens.
+2016-10-14 20:07:59,272 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:07:59,273 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 990
+2016-10-14 20:07:59,273 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:07:59,273 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 553 florens.
+
+2016-10-14 20:07:59,311 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 553 florens.
+2016-10-14 20:07:59,311 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:07:59,312 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 534
+2016-10-14 20:07:59,312 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:07:59,312 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 553 florens.
+
+2016-10-14 20:07:59,316 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 553 florens.
+2016-10-14 20:07:59,316 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:07:59,316 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 132
+2016-10-14 20:07:59,316 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:07:59,316 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 553 florens.
+
+2016-10-14 20:07:59,404 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 553 florens.
+2016-10-14 20:07:59,404 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:07:59,405 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 2 wants to give back 430
+2016-10-14 20:07:59,405 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 983 florens.
+
+2016-10-14 20:07:59,507 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 983 florens.
+2016-10-14 20:07:59,508 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:07:59,508 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 309
+2016-10-14 20:07:59,508 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:07:59,508 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 70 florens.
+
+2016-10-14 20:07:59,559 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 70 florens.
+2016-10-14 20:07:59,560 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:07:59,560 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 0 wants to give back 17
+2016-10-14 20:07:59,560 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 87 florens.
+
+2016-10-14 20:07:59,648 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 87 florens.
+2016-10-14 20:07:59,649 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:07:59,649 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 518
+2016-10-14 20:07:59,649 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:07:59,649 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 87 florens.
+
+2016-10-14 20:07:59,674 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 87 florens.
+2016-10-14 20:07:59,674 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:07:59,674 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 215
+2016-10-14 20:07:59,674 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:07:59,675 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 87 florens.
+
+2016-10-14 20:07:59,731 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 87 florens.
+2016-10-14 20:07:59,731 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:07:59,731 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 203
+2016-10-14 20:07:59,731 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:07:59,732 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 87 florens.
+
+2016-10-14 20:07:59,803 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 87 florens.
+2016-10-14 20:07:59,804 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:07:59,804 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 61
+2016-10-14 20:07:59,804 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:07:59,804 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 26 florens.
+
+2016-10-14 20:07:59,834 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 26 florens.
+2016-10-14 20:07:59,835 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:07:59,835 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 4 wants to give back 913
+2016-10-14 20:07:59,835 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 939 florens.
+
+2016-10-14 20:07:59,904 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 939 florens.
+2016-10-14 20:07:59,904 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:07:59,905 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 83
+2016-10-14 20:07:59,905 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:07:59,905 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 856 florens.
+
+2016-10-14 20:07:59,925 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 856 florens.
+2016-10-14 20:07:59,925 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:07:59,925 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 173
+2016-10-14 20:07:59,925 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:07:59,925 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 237 florens.
+
+2016-10-14 20:07:59,944 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 237 florens.
+2016-10-14 20:07:59,945 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:07:59,945 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 0 wants to give back 61
+2016-10-14 20:07:59,945 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 298 florens.
+
+2016-10-14 20:07:59,947 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 298 florens.
+2016-10-14 20:07:59,947 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:07:59,947 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 3 wants to give back 619
+2016-10-14 20:07:59,947 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 917 florens.
+
+2016-10-14 20:08:00,032 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 917 florens.
+2016-10-14 20:08:00,033 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:08:00,033 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 4 wants to give back 83
+2016-10-14 20:08:00,033 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:00,041 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:00,042 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:00,042 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 201
+2016-10-14 20:08:00,042 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:00,042 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 482 florens.
+
+2016-10-14 20:08:00,071 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 482 florens.
+2016-10-14 20:08:00,071 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:00,071 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 824
+2016-10-14 20:08:00,072 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:00,072 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 279 florens.
+
+2016-10-14 20:08:00,131 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 279 florens.
+2016-10-14 20:08:00,132 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:00,132 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 600
+2016-10-14 20:08:00,132 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:00,132 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 279 florens.
+
+2016-10-14 20:08:00,179 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 279 florens.
+2016-10-14 20:08:00,180 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:00,180 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 603
+2016-10-14 20:08:00,180 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:00,180 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 279 florens.
+
+2016-10-14 20:08:00,189 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 279 florens.
+2016-10-14 20:08:00,190 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:00,190 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 856
+2016-10-14 20:08:00,190 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:00,190 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 279 florens.
+
+2016-10-14 20:08:00,247 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 279 florens.
+2016-10-14 20:08:00,247 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:08:00,247 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 69
+2016-10-14 20:08:00,248 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:00,248 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 210 florens.
+
+2016-10-14 20:08:00,269 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 210 florens.
+2016-10-14 20:08:00,270 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:00,270 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 675
+2016-10-14 20:08:00,270 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:00,270 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 210 florens.
+
+2016-10-14 20:08:00,320 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 210 florens.
+2016-10-14 20:08:00,320 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:00,321 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 354
+2016-10-14 20:08:00,321 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:00,321 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 210 florens.
+
+2016-10-14 20:08:00,334 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 210 florens.
+2016-10-14 20:08:00,334 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:00,334 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 2 wants to give back 203
+2016-10-14 20:08:00,334 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 413 florens.
+
+2016-10-14 20:08:00,340 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 413 florens.
+2016-10-14 20:08:00,341 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:00,341 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 1 wants to give back 518
+2016-10-14 20:08:00,341 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 931 florens.
+
+2016-10-14 20:08:00,372 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 931 florens.
+2016-10-14 20:08:00,372 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:00,372 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 838
+2016-10-14 20:08:00,372 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:00,373 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 331 florens.
+
+2016-10-14 20:08:00,399 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 331 florens.
+2016-10-14 20:08:00,400 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:00,400 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 714
+2016-10-14 20:08:00,400 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:00,400 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 331 florens.
+
+2016-10-14 20:08:00,537 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 331 florens.
+2016-10-14 20:08:00,537 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:00,538 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 319
+2016-10-14 20:08:00,538 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:00,538 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 12 florens.
+
+2016-10-14 20:08:00,579 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 12 florens.
+2016-10-14 20:08:00,579 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:00,579 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 3 wants to give back 600
+2016-10-14 20:08:00,579 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 612 florens.
+
+2016-10-14 20:08:00,610 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 612 florens.
+2016-10-14 20:08:00,610 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:08:00,610 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 4 wants to give back 69
+2016-10-14 20:08:00,610 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 681 florens.
+
+2016-10-14 20:08:00,635 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 681 florens.
+2016-10-14 20:08:00,635 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:00,635 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 764
+2016-10-14 20:08:00,635 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:00,635 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 681 florens.
+
+2016-10-14 20:08:00,651 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 681 florens.
+2016-10-14 20:08:00,651 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:00,652 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 1 wants to give back 319
+2016-10-14 20:08:00,652 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:00,703 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:00,703 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:00,704 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 81
+2016-10-14 20:08:00,704 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:00,704 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 397 florens.
+
+2016-10-14 20:08:00,707 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 397 florens.
+2016-10-14 20:08:00,711 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:00,712 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 153
+2016-10-14 20:08:00,712 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:00,712 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 397 florens.
+
+2016-10-14 20:08:00,753 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 397 florens.
+2016-10-14 20:08:00,753 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:00,753 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 0 wants to give back 603
+2016-10-14 20:08:00,753 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:00,882 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:00,882 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:00,882 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 95
+2016-10-14 20:08:00,882 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:00,882 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 905 florens.
+
+2016-10-14 20:08:00,899 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 905 florens.
+2016-10-14 20:08:00,900 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:00,900 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 307
+2016-10-14 20:08:00,900 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:00,900 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 598 florens.
+
+2016-10-14 20:08:01,003 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 598 florens.
+2016-10-14 20:08:01,003 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:01,003 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 176
+2016-10-14 20:08:01,003 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:01,003 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 598 florens.
+
+2016-10-14 20:08:01,078 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 598 florens.
+2016-10-14 20:08:01,078 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:08:01,078 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 140
+2016-10-14 20:08:01,078 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:01,078 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 458 florens.
+
+2016-10-14 20:08:01,138 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 458 florens.
+2016-10-14 20:08:01,138 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:01,138 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 512
+2016-10-14 20:08:01,139 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:01,139 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 458 florens.
+
+2016-10-14 20:08:01,234 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 458 florens.
+2016-10-14 20:08:01,234 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:01,234 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 18
+2016-10-14 20:08:01,234 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:01,234 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 458 florens.
+
+2016-10-14 20:08:01,251 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 458 florens.
+2016-10-14 20:08:01,251 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:01,251 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 3 wants to give back 307
+2016-10-14 20:08:01,251 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 765 florens.
+
+2016-10-14 20:08:01,290 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 765 florens.
+2016-10-14 20:08:01,290 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:01,290 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 393
+2016-10-14 20:08:01,290 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:01,290 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 253 florens.
+
+2016-10-14 20:08:01,311 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 253 florens.
+2016-10-14 20:08:01,312 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:01,312 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 0 wants to give back 95
+2016-10-14 20:08:01,312 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 348 florens.
+
+2016-10-14 20:08:01,329 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 348 florens.
+2016-10-14 20:08:01,330 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:08:01,330 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 4 wants to give back 140
+2016-10-14 20:08:01,330 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 488 florens.
+
+2016-10-14 20:08:01,354 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 488 florens.
+2016-10-14 20:08:01,354 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:08:01,354 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 939
+2016-10-14 20:08:01,355 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:01,355 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 488 florens.
+
+2016-10-14 20:08:01,408 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 488 florens.
+2016-10-14 20:08:01,408 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:01,408 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 596
+2016-10-14 20:08:01,408 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:01,408 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 488 florens.
+
+2016-10-14 20:08:01,487 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 488 florens.
+2016-10-14 20:08:01,487 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:01,487 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 768
+2016-10-14 20:08:01,487 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:01,487 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 488 florens.
+
+2016-10-14 20:08:01,694 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 488 florens.
+2016-10-14 20:08:01,695 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:01,695 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 858
+2016-10-14 20:08:01,695 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:01,695 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 488 florens.
+
+2016-10-14 20:08:01,712 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 488 florens.
+2016-10-14 20:08:01,712 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:01,712 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Cannot make the operation because bank is waiting for the money from client with id 2
+2016-10-14 20:08:01,712 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 488 florens.
+
+2016-10-14 20:08:01,715 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 488 florens.
+2016-10-14 20:08:01,715 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:01,715 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 1 wants to give back 512
+2016-10-14 20:08:01,716 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:01,733 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:01,733 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:01,734 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Cannot make the operation because bank is waiting for the money from client with id 2
+2016-10-14 20:08:01,734 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:01,761 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:01,761 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:01,761 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Cannot make the operation because bank is waiting for the money from client with id 2
+2016-10-14 20:08:01,761 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:01,796 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:01,796 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:01,796 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Cannot make the operation because bank is waiting for the money from client with id 2
+2016-10-14 20:08:01,796 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:01,823 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:01,824 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:01,824 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Cannot make the operation because bank is waiting for the money from client with id 2
+2016-10-14 20:08:01,824 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:01,842 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:01,842 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:08:01,842 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Cannot make the operation because bank is waiting for the money from client with id 2
+2016-10-14 20:08:01,843 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:01,883 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:01,883 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:01,883 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Cannot make the operation because bank is waiting for the money from client with id 2
+2016-10-14 20:08:01,883 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:01,942 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:01,942 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:01,942 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 380
+2016-10-14 20:08:01,943 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:01,943 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 236 florens.
+
+2016-10-14 20:08:01,949 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 236 florens.
+2016-10-14 20:08:01,949 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:01,949 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 2 wants to give back 764
+2016-10-14 20:08:01,949 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:02,043 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:02,044 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:02,044 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 837
+2016-10-14 20:08:02,044 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:02,044 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 163 florens.
+
+2016-10-14 20:08:02,129 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 163 florens.
+2016-10-14 20:08:02,129 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:02,129 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 152
+2016-10-14 20:08:02,129 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,130 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 163 florens.
+
+2016-10-14 20:08:02,206 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 163 florens.
+2016-10-14 20:08:02,207 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:02,207 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 33
+2016-10-14 20:08:02,207 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,207 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 163 florens.
+
+2016-10-14 20:08:02,238 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 163 florens.
+2016-10-14 20:08:02,238 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:02,239 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 379
+2016-10-14 20:08:02,239 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,239 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 163 florens.
+
+2016-10-14 20:08:02,313 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 163 florens.
+2016-10-14 20:08:02,313 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:02,313 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 610
+2016-10-14 20:08:02,313 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,314 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 163 florens.
+
+2016-10-14 20:08:02,331 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 163 florens.
+2016-10-14 20:08:02,331 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:02,332 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 2 wants to give back 837
+2016-10-14 20:08:02,332 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:02,333 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:02,333 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:08:02,333 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 43
+2016-10-14 20:08:02,333 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:02,334 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 61 florens.
+
+2016-10-14 20:08:02,374 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 61 florens.
+2016-10-14 20:08:02,375 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:02,375 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 255
+2016-10-14 20:08:02,375 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,375 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 61 florens.
+
+2016-10-14 20:08:02,436 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 61 florens.
+2016-10-14 20:08:02,436 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:02,436 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 437
+2016-10-14 20:08:02,436 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,436 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 61 florens.
+
+2016-10-14 20:08:02,502 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 61 florens.
+2016-10-14 20:08:02,502 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:02,503 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 521
+2016-10-14 20:08:02,503 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,503 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 61 florens.
+
+2016-10-14 20:08:02,541 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 61 florens.
+2016-10-14 20:08:02,541 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:02,541 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 974
+2016-10-14 20:08:02,541 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,541 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 61 florens.
+
+2016-10-14 20:08:02,602 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 61 florens.
+2016-10-14 20:08:02,602 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 4 entered the bank
+2016-10-14 20:08:02,602 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 4 wants to give back 939
+2016-10-14 20:08:02,602 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:02,714 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:02,714 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:02,715 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 990
+2016-10-14 20:08:02,715 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:02,715 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 230 florens.
+
+2016-10-14 20:08:02,721 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 230 florens.
+2016-10-14 20:08:02,721 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:02,722 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 981
+2016-10-14 20:08:02,722 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,722 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 230 florens.
+
+2016-10-14 20:08:02,818 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 230 florens.
+2016-10-14 20:08:02,818 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:02,818 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 40
+2016-10-14 20:08:02,819 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,819 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 230 florens.
+
+2016-10-14 20:08:02,855 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 230 florens.
+2016-10-14 20:08:02,855 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:02,855 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 151
+2016-10-14 20:08:02,855 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,855 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 230 florens.
+
+2016-10-14 20:08:02,874 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 230 florens.
+2016-10-14 20:08:02,874 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:02,875 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 294
+2016-10-14 20:08:02,875 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:02,875 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 230 florens.
+
+2016-10-14 20:08:02,961 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 230 florens.
+2016-10-14 20:08:02,961 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:02,962 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Cannot make the operation because bank is waiting for the money from client with id 3
+2016-10-14 20:08:02,962 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 230 florens.
+
+2016-10-14 20:08:03,104 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 230 florens.
+2016-10-14 20:08:03,105 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 1 entered the bank
+2016-10-14 20:08:03,105 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 1 wants to give back 770
+2016-10-14 20:08:03,105 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:03,145 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:03,145 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:03,145 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Cannot make the operation because bank is waiting for the money from client with id 3
+2016-10-14 20:08:03,145 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:03,150 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:03,150 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:03,150 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Cannot make the operation because bank is waiting for the money from client with id 3
+2016-10-14 20:08:03,150 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:03,211 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:03,211 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:03,211 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 120
+2016-10-14 20:08:03,211 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:03,211 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 404 florens.
+
+2016-10-14 20:08:03,217 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 404 florens.
+2016-10-14 20:08:03,217 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:03,217 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 891
+2016-10-14 20:08:03,217 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:03,217 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 119 florens.
+
+2016-10-14 20:08:03,275 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 119 florens.
+2016-10-14 20:08:03,276 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:03,276 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 685
+2016-10-14 20:08:03,276 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Rejected
+2016-10-14 20:08:03,276 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 119 florens.
+
+2016-10-14 20:08:03,319 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 119 florens.
+2016-10-14 20:08:03,319 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:03,319 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 3 wants to give back 596
+2016-10-14 20:08:03,319 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 715 florens.
+
+2016-10-14 20:08:03,645 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 715 florens.
+2016-10-14 20:08:03,645 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 0 entered the bank
+2016-10-14 20:08:03,645 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 0 wants to give back 285
+2016-10-14 20:08:03,645 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:03,672 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 1000 florens.
+2016-10-14 20:08:03,672 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:03,672 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 954
+2016-10-14 20:08:03,672 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:03,672 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 745 florens.
+
+2016-10-14 20:08:03,759 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 745 florens.
+2016-10-14 20:08:03,759 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:03,759 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client wants to take a loan: 554
+2016-10-14 20:08:03,759 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Accepted
+2016-10-14 20:08:03,759 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 191 florens.
+
+2016-10-14 20:08:03,791 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 191 florens.
+2016-10-14 20:08:03,791 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 3 entered the bank
+2016-10-14 20:08:03,791 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 3 wants to give back 554
+2016-10-14 20:08:03,791 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 745 florens.
+
+2016-10-14 20:08:04,027 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital before client came: 745 florens.
+2016-10-14 20:08:04,028 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client 2 entered the bank
+2016-10-14 20:08:04,030 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Client with id 2 wants to give back 255
+2016-10-14 20:08:04,030 pl.lodz.pl.concurrency.ConcurrentBanker.Banker INFO  - Bank capital after operation: 1000 florens.
+
+2016-10-14 20:08:04,030 pl.lodz.pl.concurrency.ConcurrentBanker.App INFO  - Client with id 0 currentLoan: 0
+2016-10-14 20:08:04,030 pl.lodz.pl.concurrency.ConcurrentBanker.App INFO  - Client with id 1 currentLoan: 0
+2016-10-14 20:08:04,030 pl.lodz.pl.concurrency.ConcurrentBanker.App INFO  - Client with id 2 currentLoan: 0
+2016-10-14 20:08:04,030 pl.lodz.pl.concurrency.ConcurrentBanker.App INFO  - Client with id 3 currentLoan: 0
+2016-10-14 20:08:04,030 pl.lodz.pl.concurrency.ConcurrentBanker.App INFO  - Client with id 4 currentLoan: 0
+2016-10-14 20:08:04,030 pl.lodz.pl.concurrency.ConcurrentBanker.App INFO  - Banker's capital: 1000
