@@ -19,5 +19,4 @@ public class Semaphore {
 		this.signal = false;
 		notifyAll();
 	}
-
 }
