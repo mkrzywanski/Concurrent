@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 public class App {
     private final static Logger logger = Logger.getLogger(App.class);
     private final static int MESSAGES_PER_MANAGER = 10;
-    private final static int NUMBER_OF_MANAGERS = 5;
+    private final static int NUMBER_OF_MANAGERS = 2;
 
     public static void main( String[] args ){
         logger.info("Starting program !");

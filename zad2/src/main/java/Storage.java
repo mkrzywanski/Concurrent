@@ -8,14 +8,10 @@ import java.util.List;
 public class Storage {
     private List<Location> locations;
     private Semaphore semaphore;
-    private Semaphore totalMsgsSemaphore;
-    private Semaphore locationMsgsSemaphore;
 
     public Storage(int locationsNumber) {
         this.initializeLocations(locationsNumber);
         semaphore = new Semaphore();
-        totalMsgsSemaphore = new Semaphore();
-        locationMsgsSemaphore = new Semaphore();
     }
 
     public void receiveMessage(int id) {
@@ -35,20 +31,14 @@ public class Storage {
 
     public int totalMessagesSent() {
         int total = 0;
-        totalMsgsSemaphore.acquire();
         for (Location location : locations) {
             total += location.getReceivedMessages();
         }
-        totalMsgsSemaphore.release();
         return total;
     }
 
     public int locationSentMessages(int id) {
-        int total = 0;
-        locationMsgsSemaphore.acquire();
-        total = locations.get(id).getSentMessages();
-        locationMsgsSemaphore.release();
-        return total;
+        return locations.get(id).getSentMessages();
     }
 
     private void initializeLocations(int locationsNumber) {
