@@ -14,27 +14,30 @@ public class Manager extends Thread {
     private int sentMessages;
 
     private SynchronousQueue<Dispatch> queue;
-    private CountDownLatch signal;
+    private SynchronousQueue<Dispatch> responses;
 
-    public Manager(int id, int messagesNumber, SynchronousQueue<Dispatch> queue, CountDownLatch signal) {
+    public Manager(int id,
+                   int messagesNumber,
+                   SynchronousQueue<Dispatch> queue,
+                   SynchronousQueue<Dispatch> responses) {
         this.id = id;
         this.messagesNumber = messagesNumber;
         this.queue = queue;
-        this.signal = signal;
+        this.responses = responses;
     }
 
     public void run() {
         try {
-            sleep(2000);
+            //sleep(2000);
             while (sentMessages < messagesNumber) {
 
                 Message msg = new Message(this.id, "Cool message from " + this.id);
                 Dispatch request = new Dispatch(DispatchType.SEND_MESSAGE, msg);
 
-                signal.await();
+
                 queue.put(request);
                 logger.info("id: " + this.id + " Sent request.");
-                Dispatch response = queue.take();
+                Dispatch response = responses.take();
                 logger.info("id: " + this.id + " Received response: " + response.data);
                 if (response.data != null)
                     sentMessages++;

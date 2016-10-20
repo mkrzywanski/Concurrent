@@ -14,23 +14,27 @@ public class Secretary extends Thread {
     private int managersCount;
 
     private SynchronousQueue<Dispatch> queue;
-    private CountDownLatch signal;
+    private SynchronousQueue<Dispatch> responses;
 
-    public Secretary(int totalMessagesNumber, int managersCount, SynchronousQueue<Dispatch> queue, CountDownLatch signal){
+    public Secretary(int totalMessagesNumber,
+                     int managersCount,
+                     SynchronousQueue<Dispatch> queue,
+                     SynchronousQueue<Dispatch> responses){
+
         this.totalMessagesNumber = totalMessagesNumber;
         this.managersCount = managersCount;
         this.queue = queue;
-        this.signal = signal;
+        this.responses = responses;
     }
     public void run(){
         while(receivedMessage < totalMessagesNumber) {
             try {
                 for (int i = 0; i < managersCount; i++) {
-                    signal.await();
+
                     Dispatch request = new Dispatch(DispatchType.RECEIVE_MESSAGE, i);
                     queue.put(request);
                     logger.info("Sent request for message");
-                    Dispatch response = queue.take();
+                    Dispatch response = responses.take();
                     String message;
                     if(response.data!=null){
                         message = (String)response.data;

@@ -14,24 +14,25 @@ public class Storage extends Thread {
     private final static Logger logger = Logger.getLogger(Storage.class);
     private SynchronousQueue<Dispatch> queue;
     private List<Location> locations;
-    private CountDownLatch signal;
+    private SynchronousQueue<Dispatch> responses;
     private int totalMessages;
     private int sentMessages;
     private int receivedMessages;
 
 
-    public Storage(int totalMessages, int locationsNumber, SynchronousQueue<Dispatch> queue, CountDownLatch signal) {
+    public Storage(int totalMessages,
+                   int locationsNumber,
+                   SynchronousQueue<Dispatch> queue,
+                   SynchronousQueue<Dispatch> responses) {
         this.initializeLocations(locationsNumber);
         this.totalMessages = totalMessages;
         this.queue = queue;
-        this.signal = signal;
+        this.responses=responses;
     }
 
     public void run() {
-        signal.countDown();
         while(receivedMessages < totalMessages || sentMessages < totalMessages) {
             try {
-
                 Dispatch request = queue.take();
                 switch(request.type){
                     case SEND_MESSAGE:
@@ -45,7 +46,6 @@ public class Storage extends Thread {
                 }
             } catch (InterruptedException ex) {
             }
-            signal.countDown();
         }
     }
 
@@ -53,7 +53,7 @@ public class Storage extends Thread {
         Boolean isAdded = locations.get(msg.id).putMessage(msg.content);
         if(isAdded)
             sentMessages++;
-        queue.put(new Dispatch(DispatchType.SEND_MESSAGE_RESULT,
+        responses.put(new Dispatch(DispatchType.SEND_MESSAGE_RESULT,
                 isAdded ? "Message sent successfully!" : "MessageBox is full"));
     }
 
@@ -61,7 +61,7 @@ public class Storage extends Thread {
         String msg = locations.get(id).receiveMessage();
         if(msg!=null)
             receivedMessages++;
-        queue.put(new Dispatch(DispatchType.RECEIVE_MESSAGE_RESULT, msg));
+        responses.put(new Dispatch(DispatchType.RECEIVE_MESSAGE_RESULT, msg));
     }
 
     private void initializeLocations(int locationsNumber) {

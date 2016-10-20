@@ -14,13 +14,15 @@ public class App {
     public static void main(String[] args) {
         logger.info("Starting program !");
         CountDownLatch signal = new CountDownLatch(1);
-        SynchronousQueue<Dispatch> dispatchQueue = new SynchronousQueue<Dispatch>();
+        SynchronousQueue<Dispatch> requests = new SynchronousQueue<Dispatch>();
+        SynchronousQueue<Dispatch> responses = new SynchronousQueue<Dispatch>();
 
+        new Storage(MESSAGES_PER_MANAGER * NUMBER_OF_MANAGERS, NUMBER_OF_MANAGERS, requests, responses).start();
 
         for (int i = 0; i < NUMBER_OF_MANAGERS; i++) {
-            new Manager(i, MESSAGES_PER_MANAGER, dispatchQueue, signal).start();
+            new Manager(i, MESSAGES_PER_MANAGER, requests, responses).start();
         }
-        new Secretary( MESSAGES_PER_MANAGER * NUMBER_OF_MANAGERS, NUMBER_OF_MANAGERS, dispatchQueue, signal).start();
-        new Storage(MESSAGES_PER_MANAGER * NUMBER_OF_MANAGERS, NUMBER_OF_MANAGERS, dispatchQueue, signal).run();
+        new Secretary( MESSAGES_PER_MANAGER * NUMBER_OF_MANAGERS, NUMBER_OF_MANAGERS, requests, responses).start();
+
     }
 }
